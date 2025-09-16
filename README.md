@@ -1,5 +1,5 @@
 BOT DE RECICLAJE
-Bot que ayuda a reciclar mediante videotutoriales \n
+Bot que ayuda a reciclar mediante videotutoriales
 -Lucas Amado
 
 
@@ -11,7 +11,6 @@ Se puede utilizar para no desperdiciar esos objetos que puedan llegar a contamin
 
 Funciones:
 Mediante un código introducido en el chat de discord el bot enviará un video aleatorio entre 3 opciones sobre cómo reciclar cierto objeto.
-
 El objeto se especifica anteriormente, por ejemplo: !Carton  o  !Papel
 
 
