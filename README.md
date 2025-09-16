@@ -10,3 +10,7 @@ Funciones:
 Mediante un código introducido en el chat de discord el bot enviará un video aleatorio entre 3 opciones sobre cómo reciclar cierto objeto.
 El objeto se especifica anteriormente, por ejemplo: !Carton  o  !Papel
 
+
+
+Para utilizar el código necesitara tener la libreria de discord
+podra descargarla mediante el comando (pip install discord) en la consola
