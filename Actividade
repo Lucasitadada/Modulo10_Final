@@ -1,1 +1,75 @@
 
+# Importamos las librerias que usaremos en el código
+import discord
+import random
+from discord.ext import commands
+
+
+intents = discord.Intents.all()
+intents.message_content = True
+bot = commands.Bot(command_prefix="!", intents=intents)
+
+# Crea un evento el cual al iniciar el código dira en que bot se ha logueado
+@bot.event
+async def on_ready():
+    print(f'Iniciamos sesión como: {bot.user}')
+    canal = bot.get_channel(ID DE TU CANAL DE DISCORD)
+    await canal.send("¡Hola! Dime que objeto quieres reciclar \n (utiliza un: '!' antes de el objeto ni utilices tildes): \n Cartón \n Plastico \n Latas \n Vidrio \n Papel")
+
+def randomnum():
+    x = random.randint(1,3)
+    return x
+
+# Crea un comando en discord para saludar al usuario
+@bot.command()
+async def Carton(ctx):
+    num = randomnum()
+    if num == 1:
+        await ctx.send("Aquí hay un buen video para reciclar Cartón :https://www.youtube.com/watch?v=H9YaJ4j12Kk")
+    elif num == 2:
+        await ctx.send("Aquí hay un buen video para reciclar Cartón :https://www.youtube.com/watch?v=ucQHPrh9VIs&list=PLl7FoKWgpYmNxVHRTwu4AerW1csNr0Db-&index=4")
+    else:
+        await ctx.send("Aquí hay un buen video para reciclar Cartón :https://www.youtube.com/watch?v=gdJJQ-EZ5w8&list=PLl7FoKWgpYmNxVHRTwu4AerW1csNr0Db-&index=6")
+
+@bot.command()
+async def Plastico(ctx):
+    num = randomnum()
+    if num == 1:
+        await ctx.send("Aquí hay un buen video para reciclar Plastico :https://www.youtube.com/shorts/qX0SJRynQTU")
+    elif num == 2:
+        await ctx.send("Aquí hay un buen video para reciclar Plastico :https://www.youtube.com/shorts/gBK63nmu8hQ")
+    else:
+        await ctx.send("Aquí hay un buen video para reciclar Plastico :https://www.youtube.com/watch?v=83qcTV-C1UE")
+
+@bot.command()
+async def Latas(ctx):
+    num = randomnum()
+    if num == 1:
+        await ctx.send("Aquí hay un buen video para reciclar Latas :https://www.youtube.com/shorts/DeOTpCjBlEw")
+    elif num == 2:
+        await ctx.send("Aquí hay un buen video para reciclar Latas :https://www.youtube.com/shorts/-iJ_olSnS6c")
+    else:
+        await ctx.send("Aquí hay un buen video para reciclar Latas :https://www.youtube.com/shorts/FgOtr1dBqxA")
+
+@bot.command()
+async def Papel(ctx):
+    num = randomnum()
+    if num == 1:
+        await ctx.send("Aquí hay un buen video para reciclar Papel :https://www.youtube.com/watch?v=YE33M1Xb0to")
+    elif num == 2:
+        await ctx.send("Aquí hay un buen video para reciclar Papel :https://www.youtube.com/watch?v=SvadbQVusZg")
+    else:
+        await ctx.send("Aquí hay un buen video para reciclar Papel :https://www.youtube.com/watch?v=7eBgZy8B6yI")
+
+@bot.command()
+async def Vidrio(ctx):
+    num = randomnum()
+    if num == 1:
+        await ctx.send("Aquí hay un buen video para reciclar Vidrio :https://www.youtube.com/watch?v=JPpuxNfQbrU")
+    elif num == 2:
+        await ctx.send("Aquí hay un buen video para reciclar Vidrio :https://www.youtube.com/shorts/ryu3FTXJ4kI")
+    else:
+        await ctx.send("Aquí hay un buen video para reciclar Vidrio :https://www.youtube.com/shorts/vi2UbpsO1h8")
+
+
+bot.run("TU TOKEN DE DISCORD")
